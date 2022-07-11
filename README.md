@@ -5,16 +5,21 @@
 >3. Headless UI
 
 # Get Started
+
 >Install Next Js
 ```
 npx create-next-app my-project
 cd my-project
 ```
+
+
 >Then install Tailwind
 ```
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
+
+
 >Copy and Paste this in your tailwind.config.js
 ```javascript
 module.exports = {
@@ -28,6 +33,8 @@ module.exports = {
   plugins: [],
 }
 ```
+
+
 >Then install any other themes, fonts, etc you might like to use in your tailwind.config.js. I choose to use montserrat so here's my set up
 ```javascript
 module.exports = {
@@ -43,5 +50,10 @@ module.exports = {
   },
   plugins: [],
 }
+```
+
+> npm install any other packages you'll want to use in this cas headless ui
+```javascript
+npm install @headlessui/react
 ```
 
