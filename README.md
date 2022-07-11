@@ -51,6 +51,13 @@ module.exports = {
   plugins: [],
 }
 ```
+>And this in the global.css file
+```javascript
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
 > npm install any other packages you'll want to use in this case headless ui
 ```javascript
