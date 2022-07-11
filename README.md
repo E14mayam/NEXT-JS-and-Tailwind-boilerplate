@@ -57,3 +57,6 @@ module.exports = {
 npm install @headlessui/react
 ```
 
+#Alternatively
+>Download my code and enjoy coding🤗
+
