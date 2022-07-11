@@ -65,5 +65,5 @@ npm install @headlessui/react
 ```
 
 # Alternatively
->Download my code and enjoy coding;)
+>Download my code and enjoy coding ;)
 
