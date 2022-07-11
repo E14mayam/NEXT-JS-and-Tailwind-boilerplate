@@ -52,11 +52,11 @@ module.exports = {
 }
 ```
 
-> npm install any other packages you'll want to use in this cas headless ui
+> npm install any other packages you'll want to use in this case headless ui
 ```javascript
 npm install @headlessui/react
 ```
 
-#Alternatively
+# Alternatively
 >Download my code and enjoy coding🤗
 
