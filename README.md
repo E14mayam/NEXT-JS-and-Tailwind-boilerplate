@@ -1,4 +1,5 @@
-### Next Js + Tailwind Boiler plate
+# Next Js + Tailwind Boiler plate
+---
 >Included are
 >1. Next Js Boilerplate
 >2. Tailwind 
