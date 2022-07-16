@@ -9,9 +9,9 @@ const locomotiveScroll =
 
 function Template({ children }) {
   const refScroll = useRef(null);
-  let lscroll;
 
   useEffect(() => {
+    let lscroll;
     if (!refScroll.current) return
     // @ts-ignore
     lscroll = new locomotiveScroll({

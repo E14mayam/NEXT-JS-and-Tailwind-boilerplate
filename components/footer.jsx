@@ -1,8 +1,10 @@
+import Script from 'next/script'
+
 const Footer = () => {
   return (
     <div className="footer-wrapper text-center pb-5 pt-20">
        <div className=" row justify-evenly pb-10 w-full gap-5">
-      <script src="https://cdn.lordicon.com/xdjxvujz.js" type="module"></script>
+      <Script src="https://cdn.lordicon.com/xdjxvujz.js" type="module"></Script>
       <div className="email text-center flex-[0_0_auto] w-full md:w-5/12 xl:w-2/12">
         <div>
         <lord-icon
@@ -30,7 +32,7 @@ const Footer = () => {
         colors="primary:#8000ff"
       ></lord-icon>
        <h4 className="font-semibold pb-4">Make us your home</h4>
-       <a href="https://www.google.com/maps/place/58 Tombia Extension, GRA Phase 3 Port Harcourt/@4.8241953,6.9943585,17z"  target="_blank">Tombia Extension, GRA Phase 3 Port Harcourt</a>
+       <a href="https://www.google.com/maps/place/58 Tombia Extension, GRA Phase 3 Port Harcourt/@4.8241953,6.9943585,17z">Tombia Extension, GRA Phase 3 Port Harcourt</a>
       </div>
       <div className="card text-center flex-[0_0_auto] w-full md:w-5/12 xl:w-2/12">
       <lord-icon
@@ -42,7 +44,7 @@ const Footer = () => {
        <a href="#" >Give Online</a>
       </div>   
     </div>
-    <h3 className="font-bold">© 2022 The King's Assembly</h3>
+    <h3 className="font-bold">© 2022 The Kings Assembly</h3>
     </div>
   );
 };
