@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily:{
-      'montserrat' : ['Montserrat', 'sans-serif']
+      'zacbel':['Zacbel-X', 'sans-serif'],
+      'syne':['Syne', 'sans-serif']
     }
   },
   plugins: [],

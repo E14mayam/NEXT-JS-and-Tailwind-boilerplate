@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "the-kings-asssembly",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,15 +10,23 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.6.6",
+    "animate.css": "^4.1.1",
+    "framer-motion": "^6.5.1",
+    "locomotive-scroll": "^4.1.4",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-ga": "^3.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.2",
+    "file-loader": "^6.2.0",
     "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.5"
-  }
+    "tailwindcss": "^3.1.5",
+    "url-loader": "^4.1.1"
+  },
+  "author": "Emmanuel Alozie",
+  "license": "MIT"
 }

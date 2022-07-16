@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -18,3 +22,283 @@ a {
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.template{
+  scroll-behavior: smooth;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+
+/* speaker */
+.header__footer{
+    padding: 0px 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #c4c4c4;
+}
+
+.speaker__toggle {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.speaker__toggle.active {
+  left: 54%;
+}
+
+.border-link {
+  border: 2px solid #8000ff;
+}
+
+.speaker {
+  width: 5.5rem;
+    height: 3rem;
+    border: 0.2rem solid #8000ff;
+    border-radius: 50px;
+    padding: 1rem 1rem;
+    position: relative;
+}
+
+.rect1-anim{
+  animation: 1s ease-in-out 0s infinite alternate none running rect1Anim ;
+}
+
+.rect2-anim{
+  animation: 1s ease-in-out 0s infinite alternate none running rect2Anim;
+}
+
+.rect3-anim{
+  animation: 1s ease-in-out 0s infinite alternate none running rect3Anim;
+}
+
+/* Preloader */
+
+.preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: #10101a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 129993994;
+  display: grid;
+  place-content: center;
+}
+
+.preloader__right {
+  margin-left: 1rem;
+  width: max-content;
+  height: 2rem;
+  overflow: hidden;
+  position: relative;}
+
+.preloader__right::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #10101a 5%,
+    rgba(#10101a, 0) 30%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.preloader__right::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    #10101a 5%,
+    rgba(#10101a, 0) 30%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+
+.preloader__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader__left {
+  margin-right: 1rem;
+}
+
+.preloader__text {
+  font-size: 18px;
+  line-height: 210%;
+  letter-spacing: 0.19em;
+  animation: preloaderTextAnim 12s linear;
+  animation-delay: 3s;
+}
+
+/* animation */
+@keyframes rect1Anim {
+  0% {
+    height: 5.8px;
+  }
+  50% {
+    height: 8px;
+  }
+  100% {
+    height: 1px;
+  }
+}
+@keyframes rect2Anim {
+  0% {
+    height: 5.8px;
+  }
+  50% {
+    height: 6px;
+  }
+  100% {
+    height: 4px;
+  }
+}
+@keyframes rect3Anim {
+  0% {
+    height: 5.8px;
+  }
+  50% {
+    height: 4px;
+  }
+  100% {
+    height: 8px;
+  }
+}
+@keyframes preloaderTextAnim {
+  0% {
+    transform: translateY(0%);
+  }
+  50%, 100% {
+    transform: translateY(-600%);
+  }
+}
+
+/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+[data-scroll-direction="horizontal"] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
+}
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
+}
+
+/* footer */
