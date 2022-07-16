@@ -1,9 +1,8 @@
-# The Kings Assembly Redesign
+# The Kings Assembly Website Redesign
 >Included are :
 >1. Next Js
 >2. Tailwind 
->3. Headless UI
->4. Framer Motion
+>3. Framer Motion
 
 # Get Started
 
@@ -25,5 +24,5 @@ npx tailwindcss init -p
 npm -i framer-motion
 ```
 
-#Happy Coding ;)
+# Happy Coding ;)
 
