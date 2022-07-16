@@ -191,8 +191,8 @@ const Home = () => {
           Purpose Statement
         </h1>
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5x lg:px-32 underline decoration-[#8000ff]">
-          &quot To Reach and Raise Christ Followers, Equip them as Leaders, to
-          Raise others for Christ. &quot
+          &quot;To Reach and Raise Christ Followers, Equip them as Leaders, to
+          Raise others for Christ.&quot;
         </h1>
       </div>
 

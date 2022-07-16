@@ -2,7 +2,7 @@ import Script from 'next/script'
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper text-center pb-5 pt-20 pr-0">
+    <div className="footer-wrapper text-center pb-5 pt-20 pl-5 w-full">
        <div className=" row justify-evenly pb-10 w-full gap-5">
       <Script src="https://cdn.lordicon.com/xdjxvujz.js" type="module"></Script>
       <div className="email text-center flex-[0_0_auto] w-full md:w-5/12 xl:w-2/12">

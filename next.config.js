@@ -23,9 +23,6 @@ const nextConfig = {
     });
 
     return config;
-  },
-  images: {
-    domains: ['thechurchco-production.s3.amazonaws.com']
   }
 }
 
