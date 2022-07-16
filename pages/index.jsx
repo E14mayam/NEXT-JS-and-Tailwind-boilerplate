@@ -125,7 +125,7 @@ const Home = () => {
 
         <div className="times-cards row justify-evenly">
           <div className="flex-[0_0_auto] w-full md:w-5/12 xl:w-3/12">
-            <div className="time-card bg-violet-500 bg-opacity-20 backdrop-blur-lg rounded-3xl border-violet-500 border-2 drop-shadow-lg w-80 h-auto px-10 py-3 mx-auto ">
+            <div className="time-card bg-violet-500 bg-opacity-20 backdrop-blur-lg rounded-3xl border-violet-500 border-2 drop-shadow-lg w-72 h-auto px-10 py-3 mx-auto ">
               <Image
                 src={clock}
                 alt="Picture of the author"
@@ -144,7 +144,7 @@ const Home = () => {
           </div>
 
           <div className="flex-[0_0_auto] w-full md:w-5/12 xl:w-3/12 pt-4 md:pt-0 xl:pt-0">
-            <div className="time-card bg-violet-500 bg-opacity-20 backdrop-blur-lg rounded-3xl border-violet-500 border-2 drop-shadow-lg w-80 h-72 px-10 py-3 mx-auto ">
+            <div className="time-card bg-violet-500 bg-opacity-20 backdrop-blur-lg rounded-3xl border-violet-500 border-2 drop-shadow-lg w-72 h-72 px-10 py-3 mx-auto ">
               <Image
                 src={clock}
                 alt="Picture of the author"
@@ -166,7 +166,7 @@ const Home = () => {
           </div>
 
           <div className="flex-[0_0_auto] w-full md:w-5/12 xl:w-3/12 pt-4 xl:pt-0">
-            <div className="time-card bg-violet-500 bg-opacity-20 backdrop-blur-lg rounded-3xl border-violet-500 border-2 drop-shadow-lg w-80 h-auto px-10 py-3 mx-auto ">
+            <div className="time-card bg-violet-500 bg-opacity-20 backdrop-blur-lg rounded-3xl border-violet-500 border-2 drop-shadow-lg w-72 h-auto px-10 py-3 mx-auto ">
               <Image
                 src={clock}
                 alt="Picture of the author"
