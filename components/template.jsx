@@ -52,7 +52,7 @@ function Template({ children }) {
             <motion.div
               initial={{ x: -10, opacity: 0 }}
               animate={{ x: 0, opacity: 1, transition: { ...transition } }}
-              className="preloader__left"
+              className="preloader__left pt-2 md:pt-0"
             >
               <img className="w-8 md:w-14 xl:w-16" src="https://thechurchco-production.s3.amazonaws.com/uploads/sites/2482/2022/02/white-logo-100x100.png" alt="The kings assembly" />
             </motion.div>
