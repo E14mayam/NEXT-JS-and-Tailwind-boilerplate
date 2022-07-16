@@ -3,6 +3,7 @@ import Nav from "./nav";
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Footer from "./footer";
+import logo from "../assets/logo.png"
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
@@ -54,7 +55,7 @@ function Template({ children }) {
               animate={{ x: 0, opacity: 1, transition: { ...transition } }}
               className="preloader__left pt-2 md:pt-0"
             >
-              <img className="w-8 md:w-14 xl:w-16" src="https://thechurchco-production.s3.amazonaws.com/uploads/sites/2482/2022/02/white-logo-100x100.png" alt="The kings assembly" />
+              <img className="w-8 md:w-14 xl:w-16" src={logo} alt="The kings assembly" />
             </motion.div>
             <motion.div
               initial={{ x: 10, opacity: 0 }}
