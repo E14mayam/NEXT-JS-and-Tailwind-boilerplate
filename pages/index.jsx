@@ -111,13 +111,13 @@ const Home = () => {
         <div className="times-links pb-14">
           <a
             href="#"
-            className="px-10 py-4 text-zinc-50 bg-[#8000ff] rounded-full text-base font-semibold mr-2"
+            className="px-5 lg:px-10 py-2 lg:py-4 text-zinc-50 bg-[#8000ff] rounded-full text-base font-semibold mr-2"
           >
             Watch Live
           </a>
           <a
             href="#"
-            className="px-10 py-4 text-[#8000ff] bg-zinc-50 rounded-full text-base font-semibold border-link"
+            className="px-5 lg:px-10 py-2 lg:py-4 text-[#8000ff] bg-zinc-50 rounded-full text-base font-semibold border-link"
           >
             Live Audio
           </a>
